@@ -1,0 +1,13 @@
+require('dotenv').config();
+export const DB_URI = process.env.DB_URI || 'mongodb://127.0.0.1:27017/rennaisance-be';
+export const PORT = process.env.PORT || '4001';
+export const HOST = process.env.HOST || 'localhost';
+export const SMTP_USER = process.env.SMTP_USER;
+export const SMTP_PASS = process.env.SMTP_PASS;
+export const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+export const CLOUD_API_KEY = process.env.CLOUD_API_KEY;
+export const CLOUD_NAME = process.env.CLOUD_NAME;
+export const CLOUD_API_SECRET = process.env.CLOUD_API_SECRET;
+export const EMAIL_ADDRESS = process.env.EMAIL_ADDRESS;
+export const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
+export const JWT_SECRET = process.env.JWT_SECRET;

@@ -1,0 +1,49 @@
+{
+  "name": "secret",
+  "version": "1.0.0",
+  "description": "Secret server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "node dist/server.js",
+    "build": "babel ./src -d dist --copy-files",
+    "serve": "node dist/server.js"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "secret "
+  ],
+  "author": "Tochukwu Ebenezer okeke <ebenezerokeke99@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "helmet": "^4.4.1",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "husky": "^4.3.8",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
