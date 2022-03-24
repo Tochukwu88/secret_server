@@ -25,6 +25,11 @@ put sensitive data in  a `.env` file,
 
 
 
+## 📋 Documentation
+
+- [view](https://documenter.getpostman.com/view/8987794/UVsTr2mN)
+  
+
 ## 🚀 Deployement
 
-Deployed on heroku
+Deployed on heroku [here](https://rapid-secret-server.herokuapp.com)
