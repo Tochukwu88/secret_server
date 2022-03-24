@@ -1,21 +1,21 @@
-# renaissance-be
+# secret_server
 
-Backend for Rennaisance website
+Secret server api
 
 ## 🖇 How to Start
 
 - Git clone
-- cd `renaissance-be`
+- cd `secret_server`
 
 #### Local setup
 
 - `npm install` to install dependencies
 - `npm run dev` to start development server
-- On postman/postwoman/insomnia/etc, run the server endpoints, `http://localhost:4001/api/v1/...`
+- On postman/postwoman/insomnia/etc, run the server endpoints, `http://localhost:4001/v1/...`
 
 ## `.env` Credentials
 
-Checkout the `.env.example` file and create a copy of it in a `.env` file, or reach out to [@me](https://github.com/neymarjimoh) to get started.
+put sensitive data in  a `.env` file, 
 
 ## 🛠 Tools
 
@@ -23,11 +23,8 @@ Checkout the `.env.example` file and create a copy of it in a `.env` file, or re
 - Mongo DB
 - Express JS
 
-## 📋 Documentation
 
-- [view](https://documenter.getpostman.com/view/8239792/TW6zG6vs)
-  > Need help on documenting all api endpoints
 
 ## 🚀 Deployement
 
-Deployed on heroku [here](https://renaissance-be.herokuapp.com)
+Deployed on heroku
