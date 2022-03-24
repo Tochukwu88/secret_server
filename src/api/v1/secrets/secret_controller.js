@@ -29,7 +29,8 @@ export async function addSecret(req, res, next) {
   const uniquehash = await generatHash()
   const payload ={
     secretText: encryptedSecret.content,
-    expiresAt,
+    expiresAt:expiresAt.result,
+    
     iv:encryptedSecret.iv,
     hash:uniquehash
   }
@@ -37,7 +38,7 @@ export async function addSecret(req, res, next) {
  
  
 
-    return responseHandler(res, 201,{hash:uniquehash,expires_after:expiresAt}, 'you have successfully add a secret');
+    return responseHandler(res, 201,{hash:uniquehash,expires_after:expiresAt.expires_after}, 'you have successfully add a secret');
   } catch (error) {
     next(new InternalServerError(error));
   }
